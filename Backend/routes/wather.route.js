@@ -54,14 +54,17 @@ apiRouter.get("/preference",authenticate,async (req,res)=>{
     }
 })
 
-// apiRouter.get("/forecast",async (req,res)=>{
-//    try {
-    
-//    } catch (error) {
-//     console.log(error)
-//     res.status(500).send("Error while getting weather Data")
-//    }
-// })
+apiRouter.get("/forecast",async (req,res)=>{
+    let {location}=req.query
+   try {
+    let response= await fetch(`https://api.openweathermap.org/data/2.5/forecast?q=${location}&appid=${process.env.apiKey}`)
+    let data=await response.json()
+    res.status(200).send(data)
+   } catch (error) {
+    console.log(error)
+    res.status(500).send("Error while getting weather Data")
+   }
+})
 
 
 
