@@ -59,8 +59,9 @@ The Weather App provides the following API endpoints:
 GET /api/weather - Retrieves weather data for a specific location.
 POST /api/preferences - Saves user preferences, including location and unit.
 GET /api/preferences - Retrieves all saved locations.
-POST /users/register - Register a user
-POST /users/login - Login a user
+POST /users/register - Register a user.
+POST /users/login - Login a user.
+
 
 ### Technologies Used
 The Weather App is built using the following technologies:
