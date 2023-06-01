@@ -22,3 +22,57 @@ body{
 #nav a:hover{
     color: red;
  }
+
+
+ #class{
+    display: flex;
+    justify-content: space-around;
+
+}
+#class>div{
+    height: 400px;
+    width: 45%;
+    margin-top: 4%;
+}
+#cont{
+    padding-left: 10%;
+    color: white;
+}
+p{
+    font-size: 20px;
+    font-weight: bold;
+}
+input{
+    margin-left: 30%;
+    margin-top: 20px;
+    height: 33px;
+    width: 20%;
+}
+button{
+    background-color: black;
+    color: white;
+    height: 35px;
+    width: 100px;
+    font-size: 20px;
+    border: none;
+}
+#save{
+    display: flex;
+    display: none;
+}
+h1{
+    color: white;
+    margin-left: 20px;
+}
+#save-btn{
+    background-color: rgb(43, 95, 119);
+    color: white;
+    margin-left: 50px;
+}
+#logout{
+    background-color:rgb(43, 95, 119); ;
+}
+#logout:hover{
+   cursor: pointer;
+   color: red;
+}
