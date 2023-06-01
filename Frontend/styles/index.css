@@ -2,17 +2,22 @@
     padding: 0;
     margin: 0;
 }
+body{
+    background-image:url("https://www.maketecheasier.com/assets/uploads/2020/06/Featured-Image-Live-Weather-Wallpapers-Android.jpg");
+}
 #nav{
     display: flex;
     justify-content: space-around;
     height: 30px;
     padding: 20px;
     box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+     background-color: rgb(43, 95, 119);
+    z-index: 1;
 }
 #nav a{
    font-size: 25px;
    text-decoration: none;
-   color: black;
+   color: white
 }
 #nav a:hover{
     color: red;
